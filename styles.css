@@ -55,9 +55,13 @@ body {
 .contact {
     background: #333;
     padding: 80px 20px 70px; /* Increased padding */
-    min-height: 320px; /* More height */
+    min-height: 450px; /* More height */
     text-align: center;
     color: white;
+}
+
+.contact-inside{
+    padding-top: 40px;
 }
 
 .contact a {
@@ -108,12 +112,6 @@ body {
     /* 🏆 Featured Projects */
     .bg-a {
         padding: 40px 25px;
-    }
-
-    /* ✉️ Contact Section */
-    .contact {
-        padding: 80px 20px 70px; /* Increased top & bottom padding */
-        min-height: 320px; /* More height for better spacing */
     }
 
     .contact h2 {
