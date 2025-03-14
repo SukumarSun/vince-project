@@ -2,6 +2,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
 }
 
 /* 🎬 Hero Section */
@@ -12,6 +14,8 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: white;
+    padding: 20px;
 }
 
 /* 📖 About Section */
@@ -24,9 +28,10 @@ body {
 
 /* 🎞 Featured Projects */
 .bg-a {
-    background-color: #2c3e50; /* Rich Cinematic Blue */
+    background-color: #2c3e50; /* Cinematic Blue */
     color: white;
     padding: 50px 30px;
+    text-align: center;
 }
 
 .text-danger {
@@ -49,9 +54,10 @@ body {
 /* 📞 Contact Section */
 .contact {
     background: #333;
-    padding: 50px 20px 40px;
-    min-height: 200px;
+    padding: 80px 20px 70px; /* Increased padding */
+    min-height: 320px; /* More height */
     text-align: center;
+    color: white;
 }
 
 .contact a {
@@ -63,8 +69,21 @@ body {
     text-decoration: underline;
 }
 
+.contact .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: nowrap; /* Ensure buttons stay in a single line */
+}
+
 .contact .social-icons a {
     color: white;
+    padding: 10px 12px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    min-width: 80px; /* Consistent button size */
 }
 
 /* 🌍 Mobile View Adjustments */
@@ -93,8 +112,8 @@ body {
 
     /* ✉️ Contact Section */
     .contact {
-        padding: 50px 20px 40px;
-        min-height: 230px; /* Increased height */
+        padding: 80px 20px 70px; /* Increased top & bottom padding */
+        min-height: 320px; /* More height for better spacing */
     }
 
     .contact h2 {
@@ -103,5 +122,19 @@ body {
 
     .contact p {
         font-size: 14px;
+    }
+
+    /* 📲 Social Buttons */
+    .contact .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: nowrap; /* Keeps buttons on a single line */
+    }
+
+    .contact .social-icons a {
+        padding: 10px 12px;
+        font-size: 14px;
+        min-width: 80px; /* Ensures consistent button size */
     }
 }
