@@ -1,0 +1,85 @@
+/* Background and Sections */
+body {
+    background-color: #f5f5f5; /* Light gray for a subtle contrast */
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #0d47a1, #1e88e5); /* Deep cinematic blue */
+    color: white;
+    padding: 50px 20px;
+}
+
+/* Headings */
+h1, h2 {
+    color: #ffb300; /* Golden yellow for a classy feel */
+}
+
+/* Links */
+a {
+    color: #d32f2f; /* Rich red to grab attention */
+}
+a:hover {
+    color: #ffb300; /* Smooth golden transition */
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #d32f2f;
+    border-color: #b71c1c;
+}
+.btn-primary:hover {
+    background-color: #ffb300; /* Golden effect */
+    border-color: #ff6f00;
+}
+
+/* Contact Section */
+.contact {
+    background: linear-gradient(to right, #ffb300, #ff6f00); /* Warm golden gradient */
+    color: white;
+    padding: 40px 20px;
+}
+
+
+
+🎨 General Styles
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* 🎬 Hero Section */
+.hero {
+    background: linear-gradient(to right, #000000cc, #121212dd), url('film-bg.jpg') center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 📞 Contact Section */
+.contact {
+    background: #333;
+    padding: 50px 0;
+}
+
+.contact a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.contact .social-icons a {
+    color: white;
+}
+
+.profile-img {
+    width: 200px; /* Increase width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures it fills the space without stretching */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
