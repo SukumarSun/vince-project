@@ -2,6 +2,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
 }
 
 /* 🎬 Hero Section */
@@ -11,52 +13,49 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 0; /* Default padding for desktop */
+    text-align: center;
+    padding: 50px 20px;
 }
 
-/* Reduce hero section padding only on mobile */
-@media (max-width: 768px) {
-    .hero {
-        padding: 20px 0; /* Less top and bottom padding */
-        height: 60vh; /* Slightly reduced height */
-    }
-}
-
-/* 📷 Profile Image - Center Align in Mobile */
+/* 📸 Profile Image */
 .profile-img {
     width: 200px;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 15px; /* Added bottom padding */
 }
 
-@media (max-width: 768px) {
-    .profile-img {
-        display: block;
-        margin: 0 auto; /* Centers the image */
-        width: 80%; /* Make it more responsive */
-        max-width: 250px;
-    }
-}
-
-/* 🎞 Featured Projects */
+/* 🏆 Featured Projects Section */
 .bg-a {
     background-color: #2c3e50; /* Rich Cinematic Blue */
     color: white;
-    padding: 60px 20px; /* Adjusted padding for better spacing */
+    padding: 50px 20px;
 }
 
-@media (max-width: 768px) {
-    .bg-a {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+/* 🎭 Card Styling */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.2rem;
 }
 
 /* 📞 Contact Section */
 .contact {
     background: #333;
-    padding: 50px 0 80px; /* Increased bottom padding */
+    color: white;
+    text-align: center;
+    padding: 50px 0;
 }
 
 .contact a {
@@ -72,11 +71,36 @@ body {
     color: white;
 }
 
-/* 🔤 Text Colors */
-.text-danger {
-    color: #ffeb3b !important; /* Vibrant Yellow */
-}
+/* 🌍 Mobile View Adjustments */
+@media (max-width: 768px) {
+    /* 📸 Profile Picture - Centered + Bottom Padding */
+    .profile-img {
+        width: 80%;
+        max-width: 250px;
+        padding-bottom: 15px;
+    }
 
-.text-primary {
-    color: #ff9800 !important; /* Warm Orange */
+    /* 🎬 Hero Section - Reduce Spacing */
+    .hero {
+        height: 50vh;
+        padding: 30px 15px;
+    }
+
+    /* 🏆 Featured Projects - Add More Padding */
+    .bg-a {
+        padding: 40px 25px;
+    }
+
+    /* ✉️ Get in Touch Section - Reduce Font Size & Adjust Padding */
+    .contact {
+        padding: 40px 0;
+    }
+
+    .contact h2 {
+        font-size: 22px;
+    }
+
+    .contact p {
+        font-size: 14px;
+    }
 }
