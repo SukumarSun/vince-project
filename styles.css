@@ -25,21 +25,20 @@ body {
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.85);
     font-size: 3rem; /* Increased size */
     font-weight: 500; /* Bolder weight */
-    letter-spacing: 1.5px; /* Adds more spacing for elegance */
-    line-height: 1.3; /* Adjusts height for better readability */
+    letter-spacing: 1.5px;
+    line-height: 1.3;
 }
 
 .hero p {
     color: #FFEB3B; /* Brighter Yellow */
-    font-size: 1.4rem; /* Slightly bigger */
-    font-weight: 300; /* Enhances readability */
+    font-size: 1.4rem;
+    font-weight: 300;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-    max-width: 650px; /* Allows better spacing */
-    margin: 15px auto; /* More breathing space */
-    letter-spacing: 0.5px; /* Subtle spacing for a cleaner look */
-    line-height: 1.5; /* Improves readability */
+    max-width: 650px;
+    margin: 15px auto;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
 }
-
 
 /* 📖 About Section */
 .profile-img {
@@ -47,6 +46,16 @@ body {
     height: auto;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.about-heading {
+    font-size: 2rem; /* Clean and proportional */
+    font-weight: 530; /* Slightly thicker but not too bold */
+    color: #222; /* Soft black for readability */
+    text-align: left;
+    border-bottom: 2px solid #e74c3c; /* Subtle red underline */
+    padding-bottom: 4px;
+    display: inline-block;
 }
 
 /* 🎞 Featured Projects */
@@ -77,8 +86,8 @@ body {
 /* 📞 Contact Section */
 .contact {
     background: #333;
-    padding: 80px 20px 70px; /* Increased padding */
-    min-height: 450px; /* More height */
+    padding: 80px 20px 70px;
+    min-height: 450px;
     text-align: center;
     color: white;
 }
@@ -113,24 +122,13 @@ body {
     min-width: 80px; /* Consistent button size */
 }
 
-.about-heading {
-    font-size: 2rem; /* Clean and proportional */
-    font-weight: 530; /* Slightly thicker but not too bold */
-    color: #222; /* Soft black for readability */
-    text-align: left;
-    border-bottom: 2px solid #e74c3c; /* Subtle red underline */
-    padding-bottom: 4px;
-    display: inline-block;
-}
-
 /* 🌍 Mobile View Adjustments */
 @media (max-width: 768px) {
     /* 📸 Profile Picture */
     .profile-img {
         width: 80%;
         max-width: 250px;
-        padding-bottom: 0;
-        margin-bottom: 50px; /* Increased spacing */
+        margin-bottom: 50px;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -140,6 +138,23 @@ body {
     .hero {
         height: 50vh;
         padding: 30px 15px;
+    }
+
+    /* 🎬 Hero Heading (Fixes Oversized Look) */
+    .hero h1 {
+        font-size: 2rem; /* Reduced from 3rem */
+        letter-spacing: 1px;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 1.2rem; /* Slightly reduced */
+    }
+
+    /* 📖 About Heading */
+    .about-heading {
+        font-size: 1.5rem; /* Reduced from 2rem */
+        padding-bottom: 3px;
     }
 
     /* 🏆 Featured Projects */
