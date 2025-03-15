@@ -8,7 +8,7 @@ body {
 
 /* 🎬 Hero Section */
 .hero {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(18, 18, 18, 0.8)),
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(18, 18, 18, 0.5)),
                 url('images/top-bg.jpg') center/cover no-repeat;
     height: 70vh;
     display: flex;
@@ -18,6 +18,28 @@ body {
     color: white;
     padding: 20px;
 }
+
+/* 🎬 Hero Section Text Enhancements */
+.hero h1 {
+    color: #FFD700; /* Gold Yellow */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.85);
+    font-size: 3rem; /* Increased size */
+    font-weight: 500; /* Bolder weight */
+    letter-spacing: 1.5px; /* Adds more spacing for elegance */
+    line-height: 1.3; /* Adjusts height for better readability */
+}
+
+.hero p {
+    color: #FFEB3B; /* Brighter Yellow */
+    font-size: 1.4rem; /* Slightly bigger */
+    font-weight: 300; /* Enhances readability */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    max-width: 650px; /* Allows better spacing */
+    margin: 15px auto; /* More breathing space */
+    letter-spacing: 0.5px; /* Subtle spacing for a cleaner look */
+    line-height: 1.5; /* Improves readability */
+}
+
 
 /* 📖 About Section */
 .profile-img {
@@ -61,7 +83,7 @@ body {
     color: white;
 }
 
-.contact-inside{
+.contact-inside {
     padding-top: 40px;
 }
 
@@ -89,6 +111,16 @@ body {
     text-align: center;
     font-size: 14px;
     min-width: 80px; /* Consistent button size */
+}
+
+.about-heading {
+    font-size: 2rem; /* Clean and proportional */
+    font-weight: 530; /* Slightly thicker but not too bold */
+    color: #222; /* Soft black for readability */
+    text-align: left;
+    border-bottom: 2px solid #e74c3c; /* Subtle red underline */
+    padding-bottom: 4px;
+    display: inline-block;
 }
 
 /* 🌍 Mobile View Adjustments */
