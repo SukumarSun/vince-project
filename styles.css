@@ -8,7 +8,8 @@ body {
 
 /* 🎬 Hero Section */
 .hero {
-    background: linear-gradient(to right, #000000cc, #121212dd), url('film-bg.jpg') center/cover no-repeat;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(18, 18, 18, 0.8)),
+                url('images/top-bg.jpg') center/cover no-repeat;
     height: 70vh;
     display: flex;
     align-items: center;
