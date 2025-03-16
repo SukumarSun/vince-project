@@ -127,6 +127,29 @@ body {
     padding: 8px 16px;  /* Adjust padding */
 }
 
+@media (max-width: 768px) {
+    .upcoming-film .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .upcoming-film img {
+        width: 100%; 
+        max-width: 450px; 
+        margin-bottom: 20px; 
+    }
+
+    .upcoming-film h3 {
+        margin-top: 15px;  
+        font-size: 1.8rem;  
+    }
+
+    .upcoming-film .custom-btn {
+        display: block;
+        width: fit-content;  
+        margin: 20px auto;  
+    }
+}
 
 /* 🌍 Mobile View Adjustments */
 @media (max-width: 768px) {
