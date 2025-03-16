@@ -21,7 +21,7 @@ body {
 
 /* 🎬 Hero Section Text Enhancements */
 .hero h1 {
-    color: #FFD700; /* Gold Yellow */
+    color: #FFEB3B; /* Gold Yellow */
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.85);
     font-size: 3rem; /* Increased size */
     font-weight: 500; /* Bolder weight */
@@ -121,6 +121,12 @@ body {
     font-size: 14px;
     min-width: 80px; /* Consistent button size */
 }
+
+.custom-btn {
+    font-size: 0.9rem;  /* Smaller font */
+    padding: 8px 16px;  /* Adjust padding */
+}
+
 
 /* 🌍 Mobile View Adjustments */
 @media (max-width: 768px) {
